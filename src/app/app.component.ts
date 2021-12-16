@@ -13,6 +13,9 @@ export class AppComponent {
 
   onToggleDetails(){
     this.allowDetail = !this.allowDetail;
-    this.detail.push(this.detail.length + 1);
+    //this.detail.push(this.detail.length + 1);
+
+    //other way of increment number:
+    this.detail.push(new Date());
   }
 }

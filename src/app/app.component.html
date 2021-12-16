@@ -18,9 +18,9 @@
 
       <p *ngIf="allowDetail">Is this your Super Secret Password? Tuna? :O</p>
       <div
-      *ngFor="let logDetail of detail"
-      [ngStyle]="{backgroundColor: logDetail >= 5 ? 'blue' : 'transparent'}"
-      [ngClass]="{'white-text': logDetail >= 5}">
+      *ngFor="let logDetail of detail; let i = index"
+      [ngStyle]="{backgroundColor: i >= 4 ? 'blue' : 'transparent'}"
+      [ngClass]="{'white-text': i >= 4}">
       {{ logDetail }}
       </div>
     </div>
